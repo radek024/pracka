@@ -1,0 +1,246 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pl"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pl"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pl"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Start | Zwiedzaj Lubelskie!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <h1 class="visually-hidden">Zwiedzaj lubelskie - strona główna</h1>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">Używasz przestarzałej przeglądarki. <a href="http://browsehappy.com/">Zaktualizuj swoją przeglądarkę</a>, aby korzystać z strony w pełni.</p>
+        <![endif]-->
+    <nav class="page-navigation">
+        <div class="container">
+            <h2 class="blog-title"><a href="/blog/" class="nav-link">Zwiedzaj lubelskie</a><span
+                    class="visually-hidden"> -
+                    nawigacja</span></h2>
+            <button type="button" class="hamburger-menu" tabindex="-1">
+                Menu
+            </button>
+            <ul class="nav-list">
+                <li class="nav-item "><a href="#" class="nav-link">Start</a></li>
+                <li class="nav-item "><a href="#" class="nav-link">Atrakcje</a></li>
+                <li class="nav-item "><a href="#" class="nav-link">Ranking</a></li>
+                <li class="nav-item "><a href="#" class="nav-link">O aplikacji</a></li>
+                <li class="nav-item "><a href="#" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="el"></div>
+    <header class="page-header">
+        <div class="container">
+            <div>
+                <h2 class="page-title">Zwiedzaj lubelskie <br>tak jak lubisz!</h2>
+                <p class="page-desc">Szybka wycieczka? A może jednak coś dłuższego? Dostosuj wyjazd do swoich potrzeb!
+                    Skorzystaj z bazy niemal 150 atrakcji w województwie i ciesz się okolicą!</p>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <div class="container">
+            <h2 class="content-title visually-hidden">Określ swój cel podróży!</h2>
+            <form action="wyniki.html" class="page-form" method="GET">
+                <div class="form-option">
+                    <h3 class="option-title">Jaki rodzaj wyjazdu Cię interesuje?</h3>
+                    <div>
+                        <input type="radio" name="type" id="architecture" value="architecture" required />
+                        <label for="architecture" class="label-title">
+                            <img src="img/city.svg" alt="" class="fig-src">
+                            <span class="label-title">Architektura</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="type" id="nature" value="nature" required />
+
+                        <label for="nature" class="label-title">
+                            <img src="img/nature.svg" alt="" class="fig-src">
+                            <span class="label-title">Natura</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="form-option">
+                    <h3 class="option-title">Jedziesz sam? Z kimś? Ze znajomymi?</h3>
+                    <div>
+
+                        <div class="image">
+                            <img src="img/employee.svg" alt="" class="fig-src">
+                            <label for="persons" class="label-title">Wyjazd jednoosobowy</label>
+                        </div>
+
+                    </div>
+                    <div class="range-meter">
+                        <input type="range" id="persons" list="tickmarks-persons" name="persons" step="10">
+                        <datalist id="tickmarks-persons">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </div>
+                    <div>
+
+                        <div class="image">
+                            <img src="img/employees.svg" alt="" class="fig-src">
+                            <label for="persons" class="label-title">Wyjazd grupą</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-option">
+                    <h3 class="option-title">Który transport bardziej Ci odpowiada?</h3>
+                    <div>
+
+                        <div class="image">
+                            <img src="img/car.svg" alt="" class="fig-src">
+                            <label for="transport" class="label-title">Wybieram auto!</label>
+                        </div>
+
+                    </div>
+                    <div class="range-meter">
+                        <input type="range" id="transport" list="tickmarks-transport" name="transport" step="10">
+                        <datalist id="tickmarks-transport">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </div>
+                    <div>
+
+                        <div class="image">
+                            <img src="img/bus.svg" alt="" class="fig-src">
+                            <label for="transport" class="label-title">Komunikacja publiczna</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-option">
+                    <h3 class="option-title">Już tęskimy! Na ile wyjeżdżasz?</h3>
+                    <div>
+                        <div class="image">
+                            <img src="img/clock.svg" alt="" class="fig-src">
+                            <label for="time" class="label-title">To szybki wyjazd</label>
+                        </div>
+                    </div>
+                    <div class="range-meter">
+                        <input type="range" id="time" list="tickmarks-time" name="time" step="10">
+                        <datalist id="tickmarks-time">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <div class="image">
+                            <img src="img/calendar.svg" alt="" class="fig-src">
+                            <label for="extra" class="label-title">Kilka dni mnie nie będzie</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-option">
+                    <h3 class="option-title">Dodatkowe atakcje?</h3>
+                    <div>
+                        <div class="image">
+                            <img src="img/park.svg" alt="" class="fig-src">
+                            <label for="extra" class="label-title">Nie, dzięki</label>
+                        </div>
+                    </div>
+                    <div class="range-meter">
+                        <input type="range" id="time" list="tickmarks-extra" name="extra" step="10">
+                        <datalist id="tickmarks-extra">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <div class="image">
+                            <img src="img/cityscape.svg" alt="" class="fig-src">
+                            <label for="extra" class="label-title">Im więcej, tym lepiej!</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-option">
+                    <h3 class="option-title">Co jeszcze jest kluczowe?</h3>
+                    <div>
+                        <input type="checkbox" id="extras-accom" />
+                        <label for="extras-accom" class="label-title">
+                            <img src="img/day.svg" alt="" class="fig-src">
+                            <span class="label-title">Noclegi</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="extras-food" />
+                        <label for="extras-food" class="label-title">
+                            <img src="img/dish.svg" alt="" class="fig-src">
+                            <span class="label-title">Jedzonko</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="extras-view" />
+                        <label for="extras-view" class="label-title">
+                            <img src="img/postcard.svg" alt="" class="fig-src">
+                            <span class="label-title">Widoczki</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-submit">Wyślij</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <span class="footer-content">
+            Zwiedzaj lubelskie | 2021
+        </span>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
